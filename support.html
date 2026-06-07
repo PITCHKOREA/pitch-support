@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P!TCH 고객지원</title>
+<style>
+  :root{--navy:#1B3A6B;--light:#EBF0FA;--gray:#6B7280;--border:#E5E7EB;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif;color:#111;background:#F9FAFB;line-height:1.7;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
+  header{background:var(--navy);color:#fff;padding:48px 20px 40px;text-align:center;}
+  header h1{font-size:32px;font-weight:900;letter-spacing:-0.5px;}
+  header p{margin-top:8px;font-size:15px;color:#BFDBFE;}
+  h2{font-size:20px;font-weight:800;color:var(--navy);margin:44px 0 16px;}
+  .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:10px;}
+  .faq-q{font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  .faq-q::after{content:"›";color:var(--navy);font-size:18px;transform:rotate(90deg);}
+  .faq-a{display:none;margin-top:12px;font-size:14px;color:#444;background:var(--light);border-radius:10px;padding:14px 16px;}
+  .card.open .faq-a{display:block;}
+  .card.open .faq-q::after{transform:rotate(270deg);}
+  .contact{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px;}
+  .contact .row{display:flex;gap:10px;margin-bottom:10px;font-size:14px;}
+  .contact .row b{min-width:84px;color:var(--navy);}
+  .btn{display:inline-block;margin-top:14px;background:var(--navy);color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:12px 24px;border-radius:10px;}
+  footer{margin-top:60px;text-align:center;font-size:12px;color:#9CA3AF;}
+  footer a{color:var(--gray);}
+</style>
+</head>
+<body>
+<header>
+  <h1>⚾ P!TCH</h1>
+  <p>나만의 KBO 드림 로스터 · 고객지원 센터</p>
+</header>
+<div class="wrap">
+
+  <h2>자주 묻는 질문</h2>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">로스터는 어떻게 등록하나요?</div>
+    <div class="faq-a">Roster 탭에서 '전체 선수' 버튼을 탭해 선수 목록을 여세요. 원하는 선수 행 오른쪽의 추가 버튼을 누르면 내 로스터에 등록돼요. 로스터는 투수 4명 · 내야수 5명 · 외야수 3명 · 지명타자 1명, 총 13명으로 구성됩니다.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">선수 교체는 언제 가능한가요?</div>
+    <div class="faq-a">매일 10:00부터 해당 경기 시작 2시간 전까지 선수를 교체할 수 있어요.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">선수 점수는 언제 반영되나요?</div>
+    <div class="faq-a">경기 종료 후 다음 날 00:00에 최종 점수가 반영됩니다.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">점수는 어떻게 계산되나요?</div>
+    <div class="faq-a">타자는 홈런 +3점, 안타 +2점, 타점·도루·볼넷 +1점, 삼진 -1점. 투수는 승리 +3점, 6이닝 이상 +2점, 탈삼진 1개당 +0.5점, 볼넷 1개당 -0.5점, 실점 1개당 -1점이 적용됩니다. 랜덤픽으로 선택한 선수가 활약하면 일반 선수 대비 2배 포인트가 지급돼요.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">랭킹 기준이 궁금해요</div>
+    <div class="faq-a">당일 내 로스터 선수들의 P!TCH 점수 합산으로 일간 랭킹이 결정돼요. 시즌 누적 점수는 전체 시즌 랭킹에 반영됩니다.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">포인트를 현금으로 바꿀 수 있나요?</div>
+    <div class="faq-a">아니요. P!TCH는 무료 서비스이며, 점수와 포인트는 현금·상품으로 교환되지 않는 순수 게임 요소입니다.</div>
+  </div>
+
+  <div class="card" onclick="this.classList.toggle('open')">
+    <div class="faq-q">회원 탈퇴는 어떻게 하나요?</div>
+    <div class="faq-a">앱의 MY 탭 하단 '회원탈퇴' 메뉴에서 직접 탈퇴할 수 있어요. 탈퇴 시 개인정보는 30일 이내에 삭제됩니다.</div>
+  </div>
+
+  <h2>문의하기</h2>
+  <div class="contact">
+    <div class="row"><b>이메일</b><span>pjjh1831@gmail.com</span></div>
+    <div class="row"><b>응대 시간</b><span>평일 09:00 ~ 18:00 (KST)</span></div>
+    <div class="row"><b>답변 기한</b><span>영업일 기준 24시간 이내</span></div>
+    <a class="btn" href="mailto:pjjh1831@gmail.com?subject=[P!TCH 문의]">✉ 이메일 문의 보내기</a>
+  </div>
+
+  <footer>
+    © 2026 P!TCH. All rights reserved. · <a href="./privacy.html">개인정보 처리방침</a>
+  </footer>
+</div>
+</body>
+</html>
