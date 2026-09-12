@@ -5,83 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>P!TCH 고객지원</title>
 <style>
-  :root{--navy:#1B3A6B;--light:#EBF0FA;--gray:#6B7280;--border:#E5E7EB;}
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif;color:#111;background:#F9FAFB;line-height:1.7;}
-  .wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
-  header{background:var(--navy);color:#fff;padding:48px 20px 40px;text-align:center;}
-  header h1{font-size:32px;font-weight:900;letter-spacing:-0.5px;}
-  header p{margin-top:8px;font-size:15px;color:#BFDBFE;}
-  h2{font-size:20px;font-weight:800;color:var(--navy);margin:44px 0 16px;}
-  .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:10px;}
-  .faq-q{font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
-  .faq-q::after{content:"›";color:var(--navy);font-size:18px;transform:rotate(90deg);}
-  .faq-a{display:none;margin-top:12px;font-size:14px;color:#444;background:var(--light);border-radius:10px;padding:14px 16px;}
-  .card.open .faq-a{display:block;}
-  .card.open .faq-q::after{transform:rotate(270deg);}
-  .contact{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px;}
-  .contact .row{display:flex;gap:10px;margin-bottom:10px;font-size:14px;}
-  .contact .row b{min-width:84px;color:var(--navy);}
-  .btn{display:inline-block;margin-top:14px;background:var(--navy);color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:12px 24px;border-radius:10px;}
-  footer{margin-top:60px;text-align:center;font-size:12px;color:#9CA3AF;}
-  footer a{color:var(--gray);}
+:root{--navy:#1B3A6B;--light:#EBF0FA;--border:#E5E7EB;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif;color:#111;background:#F9FAFB;line-height:1.8;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
+header{background:var(--navy);color:#fff;padding:48px 20px 40px;text-align:center;}
+header h1{font-size:26px;font-weight:900;letter-spacing:-0.5px;}
+header p{margin-top:8px;font-size:13px;color:#BFDBFE;}
+h2{font-size:18px;font-weight:800;color:var(--navy);margin:40px 0 12px;}
+p,li{font-size:14px;color:#333;}
+ul{padding-left:20px;margin:8px 0;}
+.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 22px;}
+details{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 20px;margin-bottom:10px;}
+details summary{font-size:15px;font-weight:700;color:var(--navy);cursor:pointer;list-style:none;}
+details summary::-webkit-details-marker{display:none;}
+details summary::after{content:"＋";float:right;color:#9CA3AF;font-weight:400;}
+details[open] summary::after{content:"－";}
+details p{margin-top:12px;}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
+th{background:var(--light);color:var(--navy);font-weight:700;white-space:nowrap;}
+.btn{display:inline-block;margin-top:14px;background:var(--navy);color:#fff;text-decoration:none;padding:12px 22px;border-radius:10px;font-size:14px;font-weight:700;}
+.notice{background:#FEF9E7;border:1px solid #F5DFA0;border-radius:11px;padding:14px 16px;margin-top:12px;}
+.notice p{font-size:13px;color:#7A5B12;}
+footer{margin-top:60px;text-align:center;font-size:12px;color:#9CA3AF;}
+footer a{color:#6B7280;}
 </style>
 </head>
 <body>
 <header>
-  <h1>⚾ P!TCH</h1>
-  <p>나만의 프로야구 드림 로스터 · 고객지원 센터</p>
+<h1>⚾ P!TCH</h1>
+<p>나만의 KBO 드림 로스터 · 고객지원 센터</p>
 </header>
 <div class="wrap">
 
-  <h2>자주 묻는 질문</h2>
+<h2>자주 묻는 질문</h2>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">로스터는 어떻게 등록하나요?</div>
-    <div class="faq-a">Roster 탭에서 '전체 선수' 버튼을 탭해 선수 목록을 여세요. 원하는 선수 행 오른쪽의 추가 버튼을 누르면 내 로스터에 등록돼요. 로스터는 투수 4명 · 내야수 5명 · 외야수 3명 · 지명타자 1명, 총 13명으로 구성됩니다.</div>
-  </div>
+<details><summary>로스터는 어떻게 등록하나요?</summary>
+<p>Roster 탭에서 '전체 선수' 버튼을 탭해 선수 목록을 여세요. 원하는 선수 행 오른쪽의 추가 버튼을 누르면 내 로스터에 등록돼요. 로스터는 투수 4명 · 내야수 5명 · 외야수 3명 · 지명타자 1명, 총 13명으로 구성됩니다.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">선수 교체는 언제 가능한가요?</div>
-    <div class="faq-a">매일 오후 11시부터 해당 경기 시작 1시간 전까지 선수를 교체할 수 있어요.</div>
-  </div>
+<details><summary>선수 교체는 언제 가능한가요?</summary>
+<p>매일 10:00부터 해당 경기 시작 2시간 전까지 선수를 교체할 수 있어요.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">선수 점수는 언제 반영되나요?</div>
-    <div class="faq-a">경기 종료 후 다음 날 00:00에 최종 점수가 반영됩니다.</div>
-  </div>
+<details><summary>선수 점수는 언제 반영되나요?</summary>
+<p>경기 종료 후 다음 날 00:00에 최종 점수가 반영됩니다.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">점수는 어떻게 계산되나요?</div>
-    <div class="faq-a">타자는 홈런 +3점, 안타 +2점, 타점 +2점, 도루·볼넷 +1점, 삼진 -1점. 투수는 승리 +3점, 6이닝 이상 +2점, 홀드·세이브 +2점, 탈삼진 1개당 +0.5점, 볼넷 1개당 -0.5점, 실점 1개당 -1점이 적용됩니다. 랜덤픽으로 선택한 선수가 활약하면 일반 선수 대비 2배 포인트가 지급돼요.</div>
-  </div>
+<details><summary>점수는 어떻게 계산되나요?</summary>
+<p>타자는 홈런 +3점, 안타 +2점, 타점·도루·볼넷 +1점, 삼진 -1점. 투수는 승리 +3점, 6이닝 이상 +2점, 탈삼진 1개당 +0.5점, 볼넷 1개당 -0.5점, 실점 1개당 -1점이 적용됩니다. 랜덤픽으로 선택한 선수가 활약하면 일반 선수 대비 2배 포인트가 지급돼요.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">랭킹 기준이 궁금해요</div>
-    <div class="faq-a">당일 내 로스터 선수들의 P!TCH 점수 합산으로 일간 랭킹이 결정돼요. 시즌 누적 점수는 전체 시즌 랭킹에 반영됩니다.</div>
-  </div>
+<details><summary>랭킹 기준이 궁금해요</summary>
+<p>당일 내 로스터 선수들의 P!TCH 점수 합산으로 일간 랭킹이 결정돼요. 시즌 누적 점수는 전체 시즌 랭킹에 반영됩니다.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">포인트를 현금으로 바꿀 수 있나요?</div>
-    <div class="faq-a">아니요. P!TCH는 무료 서비스이며, 점수와 포인트는 현금·상품으로 교환되지 않는 순수 게임 요소입니다.</div>
-  </div>
+<details><summary>커뮤니티는 어떻게 이용하나요?</summary>
+<p>하단 Community 탭에서 다른 이용자의 글을 읽을 수 있고, 로그인하면 직접 글과 댓글을 쓸 수 있어요. 글에는 직관 사진 1장과 관람한 경기를 함께 붙일 수 있습니다. 카테고리(자유·응원·정보·질문·팬심·기타)를 골라 올리면 같은 관심사끼리 모여 볼 수 있어요.</p></details>
 
-  <div class="card" onclick="this.classList.toggle('open')">
-    <div class="faq-q">회원 탈퇴는 어떻게 하나요?</div>
-    <div class="faq-a">앱의 MY 탭 하단 '회원탈퇴' 메뉴에서 직접 탈퇴할 수 있어요. 탈퇴 시 개인정보는 30일 이내에 삭제됩니다.</div>
-  </div>
+<details><summary>커뮤니티에 올릴 수 없는 내용이 있나요?</summary>
+<p>있습니다. 욕설·비방·차별 표현, 음란물 또는 청소년에게 유해한 내용, 광고·도배·스팸, 외부 링크, 타인이나 본인의 개인정보가 담긴 글은 올릴 수 없어요. 이런 내용은 등록 단계에서 자동으로 걸러집니다. 또한 짧은 시간에 같은 글을 반복해 올리면 일시적으로 제한됩니다.</p></details>
 
-  <h2>문의하기</h2>
-  <div class="contact">
-    <div class="row"><b>이메일</b><span>pitchkorea.ios@gmail.com</span></div>
-    <div class="row"><b>응대 시간</b><span>평일 09:00 ~ 18:00 (KST)</span></div>
-    <div class="row"><b>답변 기한</b><span>영업일 기준 24시간 이내</span></div>
-    <a class="btn" href="mailto:pitchkorea.ios@gmail.com?subject=[P!TCH 문의]">✉ 이메일 문의 보내기</a>
-  </div>
+<details><summary>부적절한 글이나 댓글을 발견했어요</summary>
+<p>각 게시글과 댓글 오른쪽의 ⋯ 메뉴에서 <strong>신고하기</strong>를 누르면 사유를 골라 접수할 수 있어요. 같은 메뉴에서 <strong>이 사용자 차단</strong>을 선택하면 그 이용자의 글과 댓글이 더 이상 보이지 않습니다.</p>
+<div class="notice"><p>신고된 게시물은 <strong>영업일 기준 24시간 이내</strong>에 확인하여 삭제하고, 반복되거나 정도가 심한 경우 작성자의 이용을 제한하거나 계정을 정지합니다. 긴급한 사안은 pitchkorea.ios@gmail.com 으로 알려주세요.</p></div></details>
 
-  <footer>
-    © 2026 P!TCH. All rights reserved. · <a href="./privacy.html">개인정보 처리방침</a>
-  </footer>
+<details><summary>내가 쓴 글이나 댓글을 지우고 싶어요</summary>
+<p>내가 작성한 글·댓글의 ⋯ 메뉴에서 <strong>삭제하기</strong>를 누르면 됩니다. 글을 삭제하면 달린 댓글도 함께 보이지 않아요. 작성한 글은 수정할 수 없고 삭제만 가능합니다.</p></details>
+
+<details><summary>커뮤니티 사진은 어떻게 관리되나요?</summary>
+<p>사진은 앱에서 다시 그려 저장되므로 촬영 위치(GPS) 등 원본 정보가 함께 올라가지 않습니다. 카메라·사진 접근 권한은 사진을 붙일 때만 사용하고, 허용하지 않아도 나머지 기능은 모두 이용할 수 있어요.</p></details>
+
+<details><summary>포인트를 현금으로 바꿀 수 있나요?</summary>
+<p>아니요. P!TCH는 무료 서비스이며, 점수와 포인트는 현금·상품으로 교환되지 않는 순수 게임 요소입니다. 별도로 공지되는 이벤트 경품은 각 이벤트의 공식 규정에 따릅니다.</p></details>
+
+<details><summary>회원 탈퇴는 어떻게 하나요?</summary>
+<p>앱의 MY 탭 하단 '회원탈퇴' 메뉴에서 직접 탈퇴할 수 있어요. 탈퇴 시 개인정보는 30일 이내에 삭제됩니다.</p></details>
+
+<h2>커뮤니티 운영 원칙</h2>
+<div class="card">
+<ul>
+<li>P!TCH는 불쾌감을 주는 콘텐츠와 그런 행위를 하는 이용자에 대해 <strong>무관용 원칙</strong>을 적용합니다.</li>
+<li>금지 콘텐츠는 등록 단계에서 자동으로 차단되며, 앱을 거치지 않은 요청에도 동일한 기준이 적용됩니다.</li>
+<li>모든 게시글과 댓글에 신고·차단 수단을 제공합니다.</li>
+<li>신고 접수 시 영업일 기준 24시간 이내에 확인하여 조치합니다.</li>
+<li>게시물의 저작권과 책임은 작성자 본인에게 있습니다.</li>
+</ul>
+</div>
+
+<h2>문의하기</h2>
+<div class="card">
+<table>
+<tr><th>이메일</th><td>pitchkorea.ios@gmail.com</td></tr>
+<tr><th>응대 시간</th><td>평일 09:00 ~ 18:00 (KST)</td></tr>
+<tr><th>답변 기한</th><td>영업일 기준 24시간 이내</td></tr>
+<tr><th>커뮤니티 신고</th><td>영업일 기준 24시간 이내 확인·조치</td></tr>
+</table>
+<a class="btn" href="mailto:pitchkorea.ios@gmail.com?subject=[P!TCH 문의]">✉ 이메일 문의 보내기</a>
+</div>
+
+<footer>
+© 2026 P!TCH. All rights reserved. · <a href="./privacy.html">개인정보 처리방침</a>
+</footer>
 </div>
 </body>
 </html>
