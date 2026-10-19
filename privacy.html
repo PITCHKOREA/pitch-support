@@ -16,9 +16,12 @@ h2{font-size:18px;font-weight:800;color:var(--navy);margin:40px 0 12px;}
 p,li{font-size:14px;color:#333;}
 ul{padding-left:20px;margin:8px 0;}
 .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 22px;}
-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
-th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
-th{background:var(--light);color:var(--navy);font-weight:700;white-space:nowrap;}
+table{width:100%;max-width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;table-layout:fixed;}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;overflow-wrap:anywhere;}
+th{background:var(--light);color:var(--navy);font-weight:700;}
+table.cols col.c1{width:22%;}table.cols col.c2{width:48%;}table.cols col.c3{width:30%;}
+table.kv th{width:30%;white-space:nowrap;}
+@media (max-width:480px){.wrap{padding:0 14px 60px;}.card{padding:16px 12px;}table{font-size:12px;}th,td{padding:7px 7px;}}
 footer{margin-top:60px;text-align:center;font-size:12px;color:#9CA3AF;}
 footer a{color:#6B7280;}
 </style>
@@ -37,7 +40,7 @@ footer a{color:#6B7280;}
 
 <h2>2. 수집하는 개인정보 항목 및 방법</h2>
 <div class="card">
-<table>
+<table class="cols"><col class="c1"><col class="c2"><col class="c3">
 <tr><th>구분</th><th>항목</th><th>수집 방법</th></tr>
 <tr><td>계정 정보</td><td>소셜 로그인 식별자(Apple·Google), 닉네임, 이메일 주소</td><td>회원가입(소셜 로그인) 시</td></tr>
 <tr><td>프로필</td><td>응원 구단, 프로필 캐릭터, 응원 한마디</td><td>이용자가 직접 입력 시</td></tr>
@@ -90,14 +93,7 @@ footer a{color:#6B7280;}
 
 <h2>6. 개인정보 처리의 위탁 및 국외 이전</h2>
 <div class="card">
-<p>서비스는 안정적인 운영을 위해 아래와 같이 개인정보 처리 업무를 위탁하고 있으며, 위탁받은 업체가 관련 법령을 지키도록 관리합니다.</p>
-<table>
-<tr><th>수탁 업체</th><th>위탁 업무</th><th>이전되는 항목 · 국가</th></tr>
-<tr><td>Supabase, Inc.</td><td>회원 계정·서비스 데이터 저장 및 서버 운영</td><td>2항의 서버 저장 항목 · 데이터는 대한민국(서울) 리전 서버에 저장</td></tr>
-<tr><td>Google LLC (Firebase)</td><td>앱 이용 통계 분석(Firebase Analytics), 푸시 알림 발송(Firebase Cloud Messaging), Google 로그인</td><td>기기·이용 정보, 푸시 토큰, Google 계정 식별자 · 미국 등 Google 데이터센터 소재 국가</td></tr>
-<tr><td>Apple Inc.</td><td>Apple로 로그인, 푸시 알림 전달(APNs)</td><td>Apple 계정 식별자(이메일 가리기 선택 가능), 푸시 토큰 · 미국</td></tr>
-</table>
-<p>국외 이전은 앱 이용 시 네트워크를 통해 수시로 이루어지며, 서비스 이용 기간 동안(탈퇴 시 각 업체 정책에 따라 파기) 보관됩니다. 국외 이전을 원하지 않으시면 회원탈퇴로 거부할 수 있으나, 이 경우 서비스 이용이 어렵습니다.</p>
+<p>서비스는 원활한 운영을 위해 Supabase, Inc.(데이터 저장·서버 운영, 대한민국 서울 리전), Google LLC(Firebase 이용 통계·푸시 알림·Google 로그인, 미국 등), Apple Inc.(Apple로 로그인·푸시 알림, 미국)에 개인정보 처리를 위탁하며, 이 과정에서 계정 식별자·기기 정보·푸시 토큰 등이 국외로 이전될 수 있습니다.</p>
 <p>서비스는 광고를 게재하지 않으며, 광고 목적의 기기 추적(IDFA)을 하지 않습니다.</p>
 </div>
 
@@ -133,7 +129,7 @@ footer a{color:#6B7280;}
 
 <h2>10. 개인정보 보호책임자</h2>
 <div class="card">
-<table>
+<table class="kv">
 <tr><th>이름</th><td>박종환</td></tr>
 <tr><th>이메일</th><td>pitchkorea.ios@gmail.com</td></tr>
 <tr><th>응대 시간</th><td>평일 09:00 ~ 18:00 (KST)</td></tr>
@@ -143,7 +139,7 @@ footer a{color:#6B7280;}
 <h2>11. 고지 의무</h2>
 <div class="card">
 <p>본 방침의 내용이 추가·삭제·수정될 경우, 시행 최소 7일 전부터 앱 내 공지 또는 본 페이지를 통해 고지합니다.</p>
-<p>변경 이력<br>· 2026년 10월 25일: 라커룸·신인왕 랭킹·홈런더비 수집 항목, 다른 이용자에게 공개되는 정보, 개인정보 처리 위탁 및 국외 이전(Supabase·Google·Apple) 추가.<br>· 2026년 10월 2일: 로그인 수단(Apple·Google) 정리, 프로필·친구·관람 기록 항목과 기기에만 저장되는 정보 명시.</p>
+<p>변경 이력<br>· 2026년 10월 25일: 라커룸·신인왕 랭킹·홈런더비 수집 항목, 다른 이용자에게 공개되는 정보, 개인정보 처리 위탁 및 국외 이전 추가.<br>· 2026년 10월 2일: 로그인 수단(Apple·Google) 정리, 프로필·친구·관람 기록 항목과 기기에만 저장되는 정보 명시.</p>
 </div>
 
 <footer>© 2026 P!TCH. All rights reserved. · <a href="https://pitchkorea.github.io/pitch-support/support.html">고객지원</a></footer>
